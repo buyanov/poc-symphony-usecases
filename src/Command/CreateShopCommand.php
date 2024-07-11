@@ -15,7 +15,6 @@ use Symfony\Component\Console\Output\OutputInterface;
 )]
 class CreateShopCommand extends Command
 {
-
     public function __construct(private readonly CreateShopUseCase $createShopUseCase)
     {
         parent::__construct();

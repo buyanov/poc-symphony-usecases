@@ -17,8 +17,7 @@ class CreateShoppingCartAction extends AbstractController
     public function __invoke(
         CreateShoppingCartUserCase $cartUserCase,
         SerializerInterface $serializer
-    ): JsonResponse
-    {
+    ): JsonResponse {
         return new JsonResponse(
             $serializer->serialize($cartUserCase->execute(), 'json', ['groups' => 'cart:read']),
             Response::HTTP_CREATED,

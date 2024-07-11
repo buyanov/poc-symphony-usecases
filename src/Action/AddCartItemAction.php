@@ -16,7 +16,7 @@ use Symfony\Component\Serializer\SerializerInterface;
 #[AsController]
 class AddCartItemAction extends AbstractController
 {
-    #[Route ('/cart/{id}/item', name: 'api_cart_add', methods: ['POST'])]
+    #[Route('/cart/{id}/item', name: 'api_cart_add', methods: ['POST'])]
     public function __invoke(
         #[ValueResolver('body')] CartItemDto $cartItemDto,
         AddCartItemUseCase $addCartItemUseCase,

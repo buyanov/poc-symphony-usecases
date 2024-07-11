@@ -3,7 +3,6 @@
 namespace App\Action;
 
 use App\Entity\ShoppingCart;
-use App\UseCase\Shop\ListShopsUseCase;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;

@@ -7,10 +7,9 @@ use Doctrine\ORM\EntityManagerInterface;
 
 final readonly class CreateShopUseCase
 {
-
     public function __construct(
         private EntityManagerInterface $entityManager,
-    ){
+    ) {
     }
 
     public function execute(string $name, string $location): Shop

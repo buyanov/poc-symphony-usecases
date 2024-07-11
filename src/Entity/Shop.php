@@ -95,5 +95,4 @@ class Shop
 
         return $this;
     }
-
 }

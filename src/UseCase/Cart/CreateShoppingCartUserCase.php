@@ -9,7 +9,7 @@ readonly class CreateShoppingCartUserCase
 {
     public function __construct(
         private EntityManagerInterface $entityManager
-    ){
+    ) {
     }
 
     public function execute(): ShoppingCart
